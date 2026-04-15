@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        #info {
+            display: none;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personal Information</h1>
+    <button onclick="toggleInfo()">Show Info</button>
+    <div id="info">
+        <p><strong>Name:</strong> NOORASHEKIN BINTI AB RAZAK</p>
+        <p><strong>Age:</strong> 47</p>
+        <p><strong>Email:</strong> noorashekin@gmail.com</p>
+        <p><strong>Phone:</strong> 0192834423</p>
+        <p><strong>Bio:</strong> Saya bekerja di Bahagian Teknologi Maklumat, MARA</p>
+    </div>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById('info');
+            var button = document.querySelector('button');
+            if (info.style.display === 'none') {
+                info.style.display = 'block';
+                button.textContent = 'Hide Info';
+            } else {
+                info.style.display = 'none';
+                button.textContent = 'Show Info';
+            }
+        }
+    </script>
+</body>
+</html></content>
+<parameter name="filePath">c:\Users\nashekin\Desktop\my-first-project\personal.html
